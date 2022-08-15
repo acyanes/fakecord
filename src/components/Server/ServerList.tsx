@@ -1,19 +1,15 @@
-import CSS from 'csstype';
-
-interface IProps {
-  children: React.ReactNode;
-}
-
-const ServerList = ({ children }: IProps) => {
+/**
+ * this will be our container component (smart component)
+ */
+import ServerImage from './ServerImage';
+const ServerList = () => {
   return (
     <>
-      <li style={listStyle}>{children}</li>
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
     </>
   );
-};
-
-const listStyle: CSS.Properties = {
-  listStyle: 'none',
 };
 
 export default ServerList;

@@ -9,6 +9,7 @@ const imageStyle: CSS.Properties = {
   height: '50px',
   width: '50px',
   borderRadius: '50%',
+  padding: '5px 5px',
 };
 
 export default ServerImage;
