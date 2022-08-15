@@ -7,21 +7,29 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: row;
   flex-wrap: nowrap;
 }
 
+.server-column,
+.dm-column,
+.message-column {
+  display: flex;
+  flex-direction: column;
+}
+
 .server-column {
+  min-width: 100px;
+  overflow: scroll;
   background-color: pink;
-  width: 5%;
 }
 
 .dm-column {
+  min-width: 230px;
+  overflow: scroll;
   background-color: aqua;
-  width: 15%;
 }
 
 .message-column {
   background-color: blueviolet;
-  width: 80%;
+  width: 100%;
 }

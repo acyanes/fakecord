@@ -8,6 +8,22 @@ const ServerList = () => {
       <ServerImage />
       <ServerImage />
       <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
+      <ServerImage />
     </>
   );
 };
