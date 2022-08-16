@@ -18,18 +18,19 @@
 }
 
 .server-column {
-  min-width: 100px;
+  min-width: 70px;
   overflow: scroll;
-  background-color: pink;
+  background-color: #282b30;
+  align-items: center;
 }
 
 .dm-column {
   min-width: 230px;
   overflow: scroll;
-  background-color: aqua;
+  background-color: #36393e;
 }
 
 .message-column {
-  background-color: blueviolet;
+  background-color: #424549;
   width: 100%;
 }
