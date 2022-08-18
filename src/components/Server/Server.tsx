@@ -2,6 +2,7 @@
  * This will be our presentational component (dumb component)
  */
 import CSS from 'csstype';
+
 interface IProps {
   children: React.ReactNode;
 }
