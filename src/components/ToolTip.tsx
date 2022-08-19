@@ -11,7 +11,7 @@ const ToolTip = ({ children }: Props) => {
   };
 
   const hideTip = () => {
-    // setActive(false);
+    setActive(false);
   };
 
   return (
@@ -24,7 +24,7 @@ const ToolTip = ({ children }: Props) => {
       {active && (
         <div className='tooltip-tip tooltip-right'>
           {/* server name / details here */}
-          <p>server name in here server name in here server name in here</p>
+          <p>server name in here server</p>
         </div>
       )}
     </div>

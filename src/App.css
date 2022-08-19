@@ -19,7 +19,6 @@
 
 .server-column {
   min-width: 70px;
-  overflow: scroll;
   background-color: #282b30;
   align-items: center;
 }
