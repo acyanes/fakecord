@@ -8,7 +8,6 @@ function App() {
       <Server>
         <ServerList />
       </Server>
-      {/* todo create components */}
       <div className='dm-column'>Direct Messages</div>
       <div className='message-column'>@ discordUserName</div>
     </div>

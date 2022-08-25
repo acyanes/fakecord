@@ -2,7 +2,7 @@
  * this will be our container component (smart component)
  */
 import ToolTip from '../ToolTip';
-import ServerHome from './ServerHome';
+import ServerHome from '../Home/Home';
 import ServerImage from './ServerImage';
 const ServerList = () => {
   return (

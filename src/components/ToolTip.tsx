@@ -1,31 +1,16 @@
-import { useState } from 'react';
+import useHover from '../hooks/useHover';
 
 interface Props {
   children: React.ReactNode;
 }
 
 const ToolTip = ({ children }: Props) => {
-  const [active, setActive] = useState(false);
-  const showTip = () => {
-    setActive(true);
-  };
-
-  const hideTip = () => {
-    setActive(false);
-  };
-
+  const [ref, isHovered] = useHover();
   return (
-    <div
-      className='tooltip-wrapper'
-      onMouseEnter={showTip}
-      onMouseLeave={hideTip}
-    >
+    <div ref={ref} className='tooltip-wrapper'>
       {children}
-      {active && (
-        <div className='tooltip-tip tooltip-right'>
-          {/* server name / details here */}
-          <p>server name in here server</p>
-        </div>
+      {isHovered && (
+        <div className='tooltip-tip tooltip-right'>SomeServerName</div>
       )}
     </div>
   );
