@@ -26,6 +26,7 @@
 .dm-column {
   min-width: 230px;
   background-color: #36393e;
+  justify-content: space-between;
 }
 
 .message-column {
