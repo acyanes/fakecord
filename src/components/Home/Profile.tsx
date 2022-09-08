@@ -1,13 +1,15 @@
 import ServerImage from '../Server/ServerImage';
+import { FcSettings } from 'react-icons/fc';
 import '../../Profile.css';
 const Profile = () => {
   return (
     <div className='container'>
       <div className='profile'>
         <ServerImage />
-        {/* <div>online or not icon</div> */}
-        <div>ayeron</div>
-        <div>settings icon</div>
+        <div className='profile-name'>ayeron</div>
+      </div>
+      <div className='settings-icon'>
+        <FcSettings size={25} />
       </div>
     </div>
   );

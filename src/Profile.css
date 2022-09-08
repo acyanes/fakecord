@@ -1,4 +1,6 @@
 .container {
+  display: flex;
+  justify-content: space-between;
   height: 60px;
   background-color: #282b30;
   border-style: solid;
@@ -8,4 +10,25 @@
 
 .profile {
   display: flex;
+  align-items: center;
+}
+
+.profile:hover {
+  cursor: pointer;
+  background-color: #424549;
+}
+
+.profile-name {
+  color: white;
+  font-weight: 600;
+}
+
+.settings-icon {
+  display: flex;
+  align-items: center;
+  margin-right: 14px;
+}
+
+.settings-icon:hover {
+  cursor: pointer;
 }
