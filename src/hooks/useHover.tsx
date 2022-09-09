@@ -1,6 +1,6 @@
 import { Ref, useState, useCallback, useRef } from 'react';
 
-function useHover<T extends HTMLDivElement>(): [Ref<T>, boolean] {
+export function useHover<T extends HTMLDivElement>(): [Ref<T>, boolean] {
   const [hover, setHover] = useState<boolean>(false);
   const handleMouseEnter = () => setHover(true);
   const handleMouseLeave = () => setHover(false);
@@ -25,5 +25,3 @@ function useHover<T extends HTMLDivElement>(): [Ref<T>, boolean] {
 
   return [callbackRef, hover];
 }
-
-export default useHover;

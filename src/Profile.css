@@ -23,6 +23,18 @@
   font-weight: 600;
 }
 
+.profile-tool {
+  position: absolute;
+  top: 433px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
+  border-radius: 10px;
+  height: 236px;
+  width: 287px;
+  background-color: #1e2124;
+}
+
 .settings-icon {
   display: flex;
   align-items: center;
