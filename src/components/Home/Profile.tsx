@@ -1,6 +1,7 @@
 import ServerImage from '../Server/ServerImage';
 import { FcSettings } from 'react-icons/fc';
 import { useState } from 'react';
+import ProfilePopUp from './ProfilePopUp';
 
 import '../../Profile.css';
 
@@ -14,14 +15,7 @@ const Profile = () => {
   return (
     <div className='container'>
       <div className='profile' onClick={handleOnClick}>
-        {/* convert to a component, fix styling */}
-        {isShow && (
-          <div className='profile-tool'>
-            <ServerImage />
-            <div className='profile-name'>ayeron</div>
-            <div>pencil button to edit</div>
-          </div>
-        )}
+        {isShow && <ProfilePopUp />}
         <ServerImage />
         <div className='profile-name'>ayeron</div>
       </div>
