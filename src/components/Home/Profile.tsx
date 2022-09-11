@@ -4,6 +4,7 @@ import { useState } from 'react';
 import ProfilePopUp from './ProfilePopUp';
 
 import '../../Profile.css';
+import Icon from '../OnlineIcon';
 
 const Profile = () => {
   const [isShow, setIsShow] = useState<boolean>(false);
@@ -17,6 +18,7 @@ const Profile = () => {
       {isShow && <ProfilePopUp />}
       <div className='profile' onClick={handleOnClick}>
         <ServerImage />
+        <Icon />
         <div className='profile-name'>ayeron</div>
       </div>
       <div className='settings-icon'>

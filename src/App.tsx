@@ -21,7 +21,6 @@ function App() {
         <div>Direct Messages</div>
         <Profile />
       </div>
-
       <div className='message-column'>@ discordUserName</div>
     </div>
   );

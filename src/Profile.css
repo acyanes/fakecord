@@ -23,7 +23,7 @@
 .profile-tool {
   position: absolute;
   top: 433px;
-  right: 354px;
+  margin-left: 8px;
   border-radius: 10px;
   height: 246px;
   width: 287px;
