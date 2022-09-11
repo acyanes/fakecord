@@ -1,8 +1,17 @@
 .container-popup {
   display: flex;
+  justify-content: space-between;
 }
 
 .stack {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.fi-edit {
+  display: flex;
+  height: 100%;
+  margin-top: 5px;
+  padding-right: 15px;
 }

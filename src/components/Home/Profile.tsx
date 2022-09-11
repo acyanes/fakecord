@@ -14,8 +14,8 @@ const Profile = () => {
 
   return (
     <div className='container'>
+      {isShow && <ProfilePopUp />}
       <div className='profile' onClick={handleOnClick}>
-        {isShow && <ProfilePopUp />}
         <ServerImage />
         <div className='profile-name'>ayeron</div>
       </div>
