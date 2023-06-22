@@ -1,4 +1,4 @@
-import { Ref, useState, useCallback, useRef } from 'react';
+import { Ref, useState, useCallback, useRef } from "react";
 
 function useHover<T extends HTMLDivElement>(): [Ref<T>, boolean] {
   const [hover, setHover] = useState<boolean>(false);
@@ -9,15 +9,15 @@ function useHover<T extends HTMLDivElement>(): [Ref<T>, boolean] {
   const callbackRef = useCallback(
     (node: T) => {
       if (ref.current) {
-        ref.current.removeEventListener('mouseenter', handleMouseEnter);
-        ref.current.removeEventListener('mouseleave', handleMouseLeave);
+        ref.current.removeEventListener("mouseenter", handleMouseEnter);
+        ref.current.removeEventListener("mouseleave", handleMouseLeave);
       }
 
       ref.current = node;
 
       if (ref.current) {
-        ref.current.addEventListener('mouseenter', handleMouseEnter);
-        ref.current.addEventListener('mouseleave', handleMouseLeave);
+        ref.current.addEventListener("mouseenter", handleMouseEnter);
+        ref.current.addEventListener("mouseleave", handleMouseLeave);
       }
     },
     [handleMouseEnter, handleMouseLeave]

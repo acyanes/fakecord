@@ -49,6 +49,15 @@
   position: relative;
 }
 
+.tooltip-wrapper:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.tooltip-wrapper-active {
+  background-color: green;
+}
+
 .tooltip-tip {
   position: absolute;
   border-radius: 4px;
@@ -62,7 +71,7 @@
 }
 
 .tooltip-tip::before {
-  content: '';
+  content: "";
   left: 50px;
   border: solid transparent;
   height: 0;

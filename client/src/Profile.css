@@ -22,12 +22,12 @@
 
 .profile-tool {
   position: absolute;
-  top: 433px;
-  margin-left: 8px;
+  top: 545px;
+  margin-left: -16px;
   border-radius: 10px;
   height: 246px;
   width: 287px;
-  background-color: #1e2124;
+  background-color: gray;
 }
 
 .settings-icon {
