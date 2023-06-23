@@ -15,12 +15,8 @@ const Server = React.memo<ServerProps>(({ id, active, onClick }) => {
   };
 
   return (
-    <div
-      ref={ref}
-      className={`${active ? "tooltip-wrapper-active" : "tooltip-wrapper"}`}
-      onClick={handleClick}
-    >
-      <ServerImage />
+    <div ref={ref} onClick={handleClick}>
+      <ServerImage active={active} />
       {isHovered && (
         <div className="tooltip-tip tooltip-right">SomeServerName</div>
       )}
