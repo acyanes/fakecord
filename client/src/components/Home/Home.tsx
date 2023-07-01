@@ -1,4 +1,4 @@
-// possibly move this out since it isnt technically apart of the server flow
+//TODO: Move this out - also, this is the "direct messages" icon
 import CSS from 'csstype';
 import serverImage from '../../assets/discordImage.png';
 const ServerHome = () => {

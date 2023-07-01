@@ -8,6 +8,7 @@
   height: 100vh;
   display: flex;
   flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 .server-column,

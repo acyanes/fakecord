@@ -1,6 +1,7 @@
-import React from "react";
-import useHover from "../../hooks/useHover";
-import ServerImage from "./ServerImage";
+import React, { useContext } from 'react';
+import ServerImage from './ServerImage';
+import '../../App.css';
+import { IServerContext, ServerContext } from '../../context/context';
 
 export interface ServerProps {
   id: number;
@@ -9,17 +10,18 @@ export interface ServerProps {
 }
 
 const Server = React.memo<ServerProps>(({ id, active, onClick }) => {
-  const [ref, isHovered] = useHover();
+  const { serverId, setServerId } =
+    useContext<IServerContext | null>(ServerContext) ?? {};
   const handleClick = () => {
+    if (setServerId) {
+      setServerId(id);
+    }
     onClick(id);
   };
 
   return (
-    <div ref={ref} onClick={handleClick}>
+    <div onClick={handleClick}>
       <ServerImage active={active} />
-      {isHovered && (
-        <div className="tooltip-tip tooltip-right">SomeServerName</div>
-      )}
     </div>
   );
 });
