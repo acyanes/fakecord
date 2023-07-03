@@ -1,29 +1,28 @@
-import React, { useContext } from 'react';
-import ServerImage from './ServerImage';
-import '../../App.css';
-import { IServerContext, ServerContext } from '../../context/context';
+import React, { useContext } from 'react'
+import ServerImage from './server-image'
+import '../../App.css'
+import { IServerContext, ServerContext } from '../../context/context'
 
 export interface ServerProps {
-  id: number;
-  active: boolean;
-  onClick: (id: number) => void;
+  id: number
+  active: boolean
+  onClick: (id: number) => void
 }
 
 const Server = React.memo<ServerProps>(({ id, active, onClick }) => {
-  const { serverId, setServerId } =
-    useContext<IServerContext | null>(ServerContext) ?? {};
+  const { setServerId } = useContext<IServerContext | null>(ServerContext) ?? {}
   const handleClick = () => {
     if (setServerId) {
-      setServerId(id);
+      setServerId(id)
     }
-    onClick(id);
-  };
+    onClick(id)
+  }
 
   return (
     <div onClick={handleClick}>
       <ServerImage active={active} />
     </div>
-  );
-});
+  )
+})
 
-export default Server;
+export default Server

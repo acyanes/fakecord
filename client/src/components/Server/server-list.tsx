@@ -1,6 +1,6 @@
-import ToolTip from "../ToolTip";
-import ServerHome from "../Home/Home";
-import Server from "./Server";
+import ToolTip from '../tool-tip'
+import ServerHome from '../home/home'
+import Server from './server'
 const ServerList = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const ServerList = () => {
         <Server id={4} />
       </ToolTip>
     </>
-  );
-};
+  )
+}
 
-export default ServerList;
+export default ServerList
