@@ -2,10 +2,10 @@
 
 import { FiEdit2 } from 'react-icons/fi'
 import ServerImage from '../server/server-image'
-import '../../ProfilePopUp.css'
+import './profile-modal.css'
 import { forwardRef } from 'react'
 
-const ProfilePopUp = forwardRef<HTMLDivElement>((_, ref) => {
+const ProfileModal = forwardRef<HTMLDivElement>((_, ref) => {
   return (
     <div className="profile-tool" ref={ref}>
       <div className="container-popup">
@@ -19,4 +19,4 @@ const ProfilePopUp = forwardRef<HTMLDivElement>((_, ref) => {
   )
 })
 
-export default ProfilePopUp
+export default ProfileModal

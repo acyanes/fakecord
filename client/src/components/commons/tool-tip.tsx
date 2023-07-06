@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { type ServerProps } from './server/server'
+import { type ServerProps } from '../server/server'
+import './tool-tip.css'
 
 interface Props {
   children: React.ReactNode

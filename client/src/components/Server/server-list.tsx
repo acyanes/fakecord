@@ -1,6 +1,8 @@
-import ToolTip from '../tool-tip'
-import ServerHome from '../home/home'
-import Server from './server'
+import ToolTip from '../commons/tool-tip';
+import ServerHome from '../home/home';
+import Server from './server';
+
+// TODO: should take in a list of servers from BE
 const ServerList = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const ServerList = () => {
         <Server id={4} />
       </ToolTip>
     </>
-  )
-}
+  );
+};
 
-export default ServerList
+export default ServerList;

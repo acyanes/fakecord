@@ -1,16 +1,23 @@
-import { useContext } from 'react';
-import { IServerContext, ServerContext } from '../../context/context';
+import { useServerProvider } from '../../context/server-context';
 import './server.css';
 
 const ServerPage = () => {
-  const { serverId } = useContext<IServerContext | null>(ServerContext) ?? {};
+  const serverProvider = useServerProvider();
+  const serverId = serverProvider.getId();
+  const serverNames: any = {
+    1: { name: 'Boyos' },
+    2: { name: 'Start ups' },
+    3: { name: 'Algos' },
+    4: { name: 'Funko' },
+  };
+
   return (
     <div>
-      <h1>Channel Name {serverId}</h1>
-      <div className='text-channels'>
+      <h1>{serverNames[serverId].name}</h1>
+      <div className="text-channels">
         Text Channels <button>+</button>
       </div>
-      <ul className='channel-list'>
+      <ul className="channel-list">
         <li>#general</li>
         <li>#announcements</li>
         <li>#gaming</li>

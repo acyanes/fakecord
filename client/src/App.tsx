@@ -1,15 +1,12 @@
-import ServerList from './components/server/server-list'
-import Profile from './components/user/profile'
-import ServerPage from './components/server/server-column'
-import { ServerContext } from './context/context'
-import { useState } from 'react'
-import './App.css'
+import ServerList from './components/server/server-list';
+import Profile from './components/user/profile';
+import ServerPage from './components/server/server-column';
+import './App.css';
+import { ServerProvider } from './context/server-context';
 
 function App() {
-  const [serverId, setServerId] = useState(1)
-
   return (
-    <ServerContext.Provider value={{ serverId, setServerId }}>
+    <ServerProvider>
       <div className="App">
         <div className="server-column">
           <ServerList />
@@ -20,8 +17,8 @@ function App() {
         </div>
         <div className="message-column">@ discordUserName</div>
       </div>
-    </ServerContext.Provider>
-  )
+    </ServerProvider>
+  );
 }
 
-export default App
+export default App;
