@@ -1,8 +1,12 @@
 import { useServerProvider } from '../../context/server-context';
 import './server.css';
 
+// TODO: This page should be either DM or Server Page depending on the state
+// of the IconColumn
+
 const ServerPage = () => {
   const serverProvider = useServerProvider();
+
   const serverId = serverProvider.getId();
   const serverNames: any = {
     1: { name: 'Boyos' },

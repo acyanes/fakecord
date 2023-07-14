@@ -1,0 +1,15 @@
+img {
+  height: 50px;
+  width: 50px;
+  border-radius: 30%;
+  padding: 5px 5px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+hr {
+  width: 50%;
+  margin: auto;
+}

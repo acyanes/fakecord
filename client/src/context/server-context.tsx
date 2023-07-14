@@ -14,7 +14,7 @@ export interface ServerService {
 const ServerContext = createContext<ServerService | undefined>(undefined);
 
 export function ServerProvider({ children }: PropsWithChildren): ReactElement {
-  const [serverId, setServerId] = useState<number>(1);
+  const [serverId, setServerId] = useState<number>(-1);
 
   const serverService: ServerService = {
     getId: () => {
