@@ -8,6 +8,7 @@ export interface DynamicContentProps {
 }
 
 const DynamicContentWrapper = ({
+  children,
   messagePage,
   serverPage,
 }: PropsWithChildren<DynamicContentProps>) => {
@@ -15,7 +16,12 @@ const DynamicContentWrapper = ({
   const renderedChild = messageProvider.getIsActive()
     ? messagePage
     : serverPage;
-  return <div className="dm-column">{renderedChild}</div>;
+  return (
+    <div className="dm-column">
+      <div>{renderedChild}</div>
+      <div>{children}</div>
+    </div>
+  );
 };
 
 export default DynamicContentWrapper;

@@ -19,10 +19,6 @@ export interface MessageService {
 const MessageContext = createContext<MessageService | undefined>(undefined);
 
 export function MessageProvider({ children }: PropsWithChildren): ReactElement {
-  // always display the first message in the DMs on start/refresh
-  // otherwise display the current the user has clicked
-  // Dms should only be displayed if the DM icon is active
-  const [messageId, setMessageId] = useState<number>(0);
   const [isActive, setIsActive] = useState<boolean>(true);
 
   const messageService: MessageService = {
@@ -33,6 +29,9 @@ export function MessageProvider({ children }: PropsWithChildren): ReactElement {
       setIsActive(!isActive);
     },
     getMessages: () => {
+      // this should get messages with the specific user
+      // TODO: hit service layer
+
       throw new Error();
     },
   };

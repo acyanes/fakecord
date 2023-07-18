@@ -1,0 +1,31 @@
+.text {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.direct-message {
+  height: 2.5rem;
+  margin: 0.5rem;
+}
+
+.direct-message:hover {
+  cursor: pointer;
+  background-color: #2f3237;
+  border-radius: 5%;
+}
+
+.message-profile {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.online-icon {
+  position: absolute;
+  left: -85px;
+  top: 40px;
+}
+
+.username {
+  color: white;
+}

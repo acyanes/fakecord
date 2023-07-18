@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.friends {
+  height: 2rem;
+  width: 10rem;
+  text-align: left;
+  align-content: center;
+}
+
+button div {
+  padding-left: 1rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+button div span {
+  padding-left: 0.5rem;
+}

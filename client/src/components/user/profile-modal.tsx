@@ -1,9 +1,7 @@
-// TODO: Change to profile-modal
-
-import { FiEdit2 } from 'react-icons/fi'
-import ServerImage from '../server/server-image'
-import './profile-modal.css'
-import { forwardRef } from 'react'
+import { FiEdit2 } from 'react-icons/fi';
+import ServerImage from '../server/server-image';
+import './profile-modal.css';
+import { forwardRef } from 'react';
 
 const ProfileModal = forwardRef<HTMLDivElement>((_, ref) => {
   return (
@@ -16,7 +14,7 @@ const ProfileModal = forwardRef<HTMLDivElement>((_, ref) => {
         <FiEdit2 size="20" className="fi-edit" />
       </div>
     </div>
-  )
-})
+  );
+});
 
-export default ProfileModal
+export default ProfileModal;
